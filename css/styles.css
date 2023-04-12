@@ -189,11 +189,6 @@ p {
   padding-bottom: 188px;
 }
 
-/* .hero .section {
-  padding-top: 188px;
-  padding-bottom: 188px;
-} */
-
 .hero-title {
   margin-left: auto;
   margin-right: auto;
@@ -281,9 +276,6 @@ p {
   margin-bottom: 8px;
 }
 
-/* .advantage .item + .item {
-  margin-left: 20px;
-} */
 /* =============== Our Advantage =============== */
 
 /* =============== What are we doing =========== */
@@ -303,10 +295,9 @@ p {
   width: calc((100% - 48px) / 3);
 }
 
-.our-job .item + .item {
-  margin-left: 24px;
+.our-job .item:not(:last-child) {
+  margin-right: 24px;
 }
-
 /* =============== What are we doing =========== */
 
 /* =============== OUR TEAM =============== */
@@ -320,28 +311,16 @@ p {
   margin-bottom: 72px;
 }
 
-/* .our-team-item {
-  background-color: var(--body-background-color);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
-} */
-
 .our-team-list {
   display: flex;
-  /* justify-content: center; */
 }
 .advantage .item {
   width: calc((100% - 72px) / 4);
 }
 
-.our-team-item + .our-team-item {
-  margin-left: 24px;
+.our-team .our-team-item:not(:last-child) {
+  margin-right: 24px;
 }
-
-/* .our-team-item img {
-  margin-bottom: 32px;
-} */
 
 .our-team .description {
   padding-top: 32px;
@@ -361,14 +340,9 @@ p {
 }
 
 .our-team .main-text {
-  /* margin-bottom: 32px; */
   text-align: center;
 }
 
-/* .our-team h3,
-.our-team p {
-  text-align: center;
-} */
 /* =============== OUR TEAM =============== */
 
 /* =============== PORTFOLIO =============== */
@@ -423,8 +397,7 @@ p {
   column-gap: 24px;
 }
 .portfolio-list .item {
-  display: contents;
-  width: calc((100%-48px) / 3);
+  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-list .item:nth-child(3n) {
@@ -466,10 +439,6 @@ p {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-/* .page-footer .container {
-  padding-top: 100px;
-  padding-bottom: 100px;
-} */
 
 .footer-logo {
   padding-top: 1.5px;
