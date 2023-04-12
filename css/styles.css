@@ -39,7 +39,7 @@ body {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 
 h1,
@@ -95,8 +95,13 @@ p {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+.page-header .flex-element {
+  align-items: center;
+}
+
 .page-navigation {
   display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -138,7 +143,7 @@ p {
 }
 .menu-item .link {
   padding-top: 24px;
-  padding-bottom: 23px;
+  padding-bottom: 24px;
   display: block;
 }
 
@@ -165,7 +170,7 @@ p {
   letter-spacing: 0.02em;
   color: inherit;
   padding-top: 24px;
-  padding-bottom: 23px;
+  padding-bottom: 24px;
   display: block;
 }
 
@@ -180,12 +185,14 @@ p {
 .hero {
   background: var(--dark-section-color);
   text-align: center;
-}
-
-.hero .section {
   padding-top: 188px;
   padding-bottom: 188px;
 }
+
+/* .hero .section {
+  padding-top: 188px;
+  padding-bottom: 188px;
+} */
 
 .hero-title {
   margin-left: auto;
@@ -203,7 +210,9 @@ p {
 .hero-button {
   padding: 16px 32px;
 
-  display: inline-block;
+  display: block;
+  min-width: 169px;
+  height: 56px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -416,11 +425,13 @@ p {
 /* =============== FOOTER =============== */
 .page-footer {
   background: var(--dark-section-color);
-}
-.page-footer .container {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+/* .page-footer .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+} */
 
 .footer-logo {
   padding-top: 1.5px;
